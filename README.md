@@ -286,3 +286,4 @@ If you have any suggestions or issues, please open an issue on the [GitHub repos
 
 **Enjoy your Gothic coding experience!**
 "# gothic-theme" 
+"# gothic-theme" 
