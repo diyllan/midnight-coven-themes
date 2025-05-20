@@ -1,0 +1,1197 @@
+/* === Modern Gothic UI Enhancements with Next-Level QOL Improvements === */
+
+/* Core variables for consistent theme */
+:root {
+    --surface-depth1: 0 2px 5px rgba(0, 0, 0, 0.08);
+    --surface-depth2: 0 4px 10px rgba(0, 0, 0, 0.12);
+    --glass-effect: saturate(1.8) blur(20px);
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --shadow-color: rgba(100, 80, 120, 0.2);
+    --transition-fast: 120ms;
+    --transition-medium: 220ms;
+    --transition-slow: 300ms;
+    --easing-standard: cubic-bezier(0.2, 0.9, 0.1, 1);
+    --easing-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1);
+    --easing-accelerate: cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+/* Base UI modernization */
+body {
+    font-feature-settings: "calt", "hist";
+    letter-spacing: 0.02em;
+}
+
+/* Elegant rounded corners */
+.monaco-workbench .part,
+.monaco-editor-background,
+.panel,
+.sidebar,
+.editor-container {
+    border-radius: var(--radius-md) !important;
+    overflow: hidden;
+}
+
+/* Tab styling with floating effect */
+.tabs-container .tab {
+    border-radius: 6px 6px 0 0 !important;
+    margin-right: 3px;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.1, 1);
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.tabs-container .tab.active {
+    transform: translateY(-1px);
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.tabs-container .tab:not(.active):hover {
+    background-color: rgba(127, 127, 127, 0.08) !important;
+}
+
+/* FILE EXPLORER IMPROVEMENTS */
+.explorer-folders-view .monaco-list-row {
+    padding: 2px 0 !important;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    animation: fadeIn 150ms var(--easing-standard) !important;
+}
+
+.monaco-icon-label {
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.monaco-icon-label-container {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.explorer-folders-view .monaco-list-row:hover {
+    background-color: rgba(127, 127, 127, 0.08) !important;
+}
+
+.monaco-list.list_id_1 .monaco-list-row.selected,
+.monaco-list.list_id_1 .monaco-list-row.focused {
+    outline: none !important;
+}
+
+.monaco-list.list_id_1 .monaco-list-row.selected::before,
+.monaco-list.list_id_1 .monaco-list-row.focused::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    animation: selectionIndicatorFade 0.2s ease forwards;
+}
+
+@keyframes selectionIndicatorFade {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+
+    to {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+.monaco-icon-label::before {
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.monaco-icon-label:hover::before {
+    opacity: 1;
+}
+
+.monaco-tl-twistie {
+    transition: transform 0.2s ease;
+}
+
+.monaco-tl-twistie.collapsible.collapsed {
+    transform: rotate(-90deg);
+}
+
+/* COMMAND PALETTE FIX - ENSURE ALL TEXT IS VISIBLE */
+.quick-input-widget {
+    border-radius: var(--radius-md) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: var(--glass-effect) !important;
+    width: 850px !important;
+    max-width: 90vw !important;
+    animation: commandPaletteFade 0.15s cubic-bezier(0.2, 0.9, 0.1, 1) !important;
+}
+
+/* Remove stars/action items that cause layout issues */
+.quick-input-widget .actions-container .action-item:not(.monaco-toolbar) {
+    display: none !important;
+}
+
+/* Fix row height to ensure command palette items aren't too tall */
+.quick-input-list .monaco-list-row {
+    height: auto !important;
+    min-height: 22px !important;
+    /* Reduced from 28px */
+    max-height: 28px !important;
+    /* Added max-height */
+    padding: 3px 8px !important;
+    /* Reduced from 6px top/bottom */
+    margin: 1px 2px !important;
+    /* Reduced margins */
+    border-radius: var(--radius-sm) !important;
+    overflow: hidden !important;
+    /* Prevent overflow */
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Ensure label and description fit in their containers */
+.quick-input-list .monaco-list-row .monaco-icon-label-container {
+    overflow: hidden !important;
+    /* Changed from visible to hidden */
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    /* Changed from normal to nowrap */
+    padding-right: 100px !important;
+    /* Space for keybindings */
+    width: 100% !important;
+    line-height: 22px !important;
+    /* Added explicit line height */
+}
+
+/* Fix description text wrapping */
+.quick-input-list .monaco-list-row .label-description {
+    white-space: nowrap !important;
+    /* Changed from normal to nowrap */
+    overflow: hidden !important;
+    /* Changed from visible to hidden */
+    text-overflow: ellipsis !important;
+    max-width: 50% !important;
+    /* Limit width to prevent overlap */
+    opacity: 0.8 !important;
+}
+
+/* Ensure keybindings don't overlap text */
+.quick-input-list .monaco-keybinding {
+    position: absolute !important;
+    right: 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    white-space: nowrap !important;
+    margin-left: 0 !important;
+}
+
+@keyframes commandPaletteFade {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FIX FOR THE LIST BOTTOM CUT-OFF ISSUE */
+.quick-input-list {
+    margin-bottom: 0 !important;
+    /* Remove excess space */
+}
+
+.quick-input-list .monaco-list {
+    padding-bottom: 0 !important;
+    /* Remove excess padding */
+}
+
+.quick-input-list .monaco-list .monaco-scrollable-element {
+    padding-bottom: 0 !important;
+    /* Remove excess padding that causes cutoff */
+}
+
+/* CRITICAL FIX: Ensure the very bottom items are visible */
+.quick-input-list .monaco-list .monaco-scrollable-element>.monaco-list-rows {
+    padding-bottom: 10px !important;
+    /* Add padding to rows container instead */
+}
+
+/* Prevent action bar from overlapping content */
+.quick-input-widget .quick-input-action-bar {
+    position: relative !important;
+    z-index: 1 !important;
+    /* Lower z-index to prevent overlaps */
+    background: none !important;
+    /* Remove potentially overlapping background */
+    border-top: 1px solid rgba(127, 127, 127, 0.1) !important;
+    /* Subtle separation */
+    padding-top: 8px !important;
+    margin-top: 0 !important;
+    /* Remove margin that creates excess space */
+}
+
+/* IMPROVED TOOLTIP AND POPOVER STYLING - FIXED DELAY AND NESTED MENUS */
+.monaco-tooltip {
+    border-radius: var(--radius-sm) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    padding: 6px 10px !important;
+    backdrop-filter: var(--glass-effect) !important;
+    /* Remove animation delay for immediate display */
+    animation: tooltipFade 0.08s ease forwards !important;
+    max-width: 600px !important;
+    border: none !important;
+    z-index: 100000 !important;
+    /* Ensure it appears above other elements */
+    overflow: visible !important;
+    /* Prevent text cutoff */
+    /* Ensure tooltip displays immediately */
+    transition-delay: 0ms !important;
+}
+
+/* Speed up tooltip appearance */
+@keyframes tooltipFade {
+    from {
+        opacity: 0.8;
+        transform: translateY(2px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover documentation with immediate display */
+.monaco-hover {
+    border-radius: var(--radius-md) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2) !important;
+    border: none !important;
+    backdrop-filter: var(--glass-effect) !important;
+    /* Speed up animation */
+    animation: hoverFade 0.08s ease forwards !important;
+    z-index: 100000 !important;
+    /* Ensure it appears above other elements */
+    overflow: visible !important;
+    /* Prevent text cutoff */
+    /* Remove any delay */
+    transition-delay: 0ms !important;
+}
+
+/* Faster hover appearance */
+@keyframes hoverFade {
+    from {
+        opacity: 0.8;
+        transform: translateY(2px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.monaco-hover .markdown-hover {
+    padding: 8px !important;
+    max-height: none !important;
+    /* Prevent scrollbar when not needed */
+}
+
+.monaco-hover .markdown-hover code {
+    border-radius: 3px !important;
+    padding: 2px 4px !important;
+}
+
+/* Context menu styling - ENHANCED FOR NESTED MENUS */
+.context-view.monaco-menu-container {
+    border-radius: var(--radius-sm) !important;
+    overflow: visible !important;
+    /* CRITICAL: Changed to allow nested menus to show */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: var(--glass-effect) !important;
+    /* Speed up animation */
+    animation: contextMenuFade 0.08s ease forwards !important;
+    /* No delay */
+    transition-delay: 0ms !important;
+}
+
+/* Faster context menu appearance */
+@keyframes contextMenuFade {
+    from {
+        opacity: 0.8;
+        transform: translateY(2px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Fix for nested submenus */
+.monaco-menu .monaco-submenu {
+    z-index: 100001 !important;
+    /* Higher than parent */
+    position: absolute !important;
+}
+
+/* Fix positioning of nested menus */
+.monaco-menu-container .monaco-menu-container {
+    position: absolute !important;
+    z-index: 100001 !important;
+    /* Higher than parent */
+    overflow: visible !important;
+    margin-left: 0 !important;
+    /* Prevent offset issues */
+}
+
+/* Show submenu markers more clearly */
+.monaco-menu .action-label.submenu-indicator {
+    opacity: 0.8 !important;
+}
+
+/* Special hover state for items with submenus */
+.monaco-menu .monaco-action-bar .action-item.submenu {
+    position: relative !important;
+}
+
+/* Ensure submenu appears on hover without delay */
+.monaco-menu .monaco-action-bar .action-item:hover .monaco-submenu {
+    display: block !important;
+    transition-delay: 0ms !important;
+}
+
+/* Code suggestion widget - IMPROVE DISPLAY TIMING */
+.monaco-editor .suggest-widget {
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: var(--glass-effect) !important;
+    /* Faster animation */
+    animation: suggestFade 0.08s ease forwards !important;
+    /* No delay */
+    transition-delay: 0ms !important;
+}
+
+/* Faster suggestion widget appearance */
+@keyframes suggestFade {
+    from {
+        opacity: 0.8;
+        transform: translateY(-3px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SUGGESTION WIDGET DOCUMENTATION IMPROVEMENTS */
+/* Enhance the details/documentation panel in suggestions */
+.monaco-editor .suggest-widget .details {
+    border-top: 1px solid rgba(100, 80, 140, 0.2) !important;
+    background-color: rgba(40, 30, 50, 0.04) !important;
+    padding: 10px !important;
+    max-height: 320px !important;
+    /* Allow more documentation to be visible */
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0 0 var(--radius-md) var(--radius-md) !important;
+}
+
+/* Documentation text styling */
+.monaco-editor .suggest-widget .details .monaco-scrollable-element {
+    padding-right: 6px !important;
+}
+
+.monaco-editor .suggest-widget .details .markdown-docs {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    color: inherit !important;
+}
+
+/* Enhance code blocks in suggestions documentation */
+.monaco-editor .suggest-widget .details code,
+.monaco-editor .suggest-widget .details .codicon {
+    background-color: rgba(100, 80, 140, 0.1) !important;
+    border-radius: 3px !important;
+    padding: 1px 4px !important;
+    font-family: 'Geist Mono Light', monospace !important;
+    font-size: 12px !important;
+}
+
+/* Improve parameter information */
+.monaco-editor .suggest-widget .details .type {
+    opacity: 0.8 !important;
+    font-size: 12px !important;
+    margin-bottom: 6px !important;
+    padding-bottom: 6px !important;
+    border-bottom: 1px dashed rgba(127, 127, 127, 0.2) !important;
+}
+
+/* Parameter highlighting */
+.monaco-editor .suggest-widget .details .parameter {
+    font-weight: bold !important;
+    color: rgb(130, 100, 180) !important;
+}
+
+/* Enhance markdown content in documentation */
+.monaco-editor .suggest-widget .details p {
+    margin: 6px 0 !important;
+}
+
+.monaco-editor .suggest-widget .details h1,
+.monaco-editor .suggest-widget .details h2,
+.monaco-editor .suggest-widget .details h3,
+.monaco-editor .suggest-widget .details h4 {
+    margin-top: 12px !important;
+    margin-bottom: 6px !important;
+    font-weight: 600 !important;
+}
+
+/* Lists in documentation */
+.monaco-editor .suggest-widget .details ul,
+.monaco-editor .suggest-widget .details ol {
+    margin: 6px 0 !important;
+    padding-left: 20px !important;
+}
+
+.monaco-editor .suggest-widget .details li {
+    margin: 3px 0 !important;
+}
+
+/* Links in documentation */
+.monaco-editor .suggest-widget .details a {
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+    color: rgb(130, 100, 180) !important;
+}
+
+/* Better separation between documentation sections */
+.monaco-editor .suggest-widget .details hr {
+    border: none !important;
+    border-top: 1px dashed rgba(127, 127, 127, 0.2) !important;
+    margin: 8px 0 !important;
+}
+
+/* Blockquotes in documentation */
+.monaco-editor .suggest-widget .details blockquote {
+    border-left: 3px solid rgba(100, 80, 140, 0.3) !important;
+    margin: 8px 0 !important;
+    padding-left: 10px !important;
+    font-style: italic !important;
+}
+
+/* Tables in documentation */
+.monaco-editor .suggest-widget .details table {
+    border-collapse: collapse !important;
+    margin: 8px 0 !important;
+    width: 100% !important;
+}
+
+.monaco-editor .suggest-widget .details th,
+.monaco-editor .suggest-widget .details td {
+    border: 1px solid rgba(127, 127, 127, 0.2) !important;
+    padding: 4px 8px !important;
+    text-align: left !important;
+}
+
+.monaco-editor .suggest-widget .details th {
+    background-color: rgba(100, 80, 140, 0.1) !important;
+}
+
+/* Find widget - IMPROVE DISPLAY TIMING */
+.monaco-editor .find-widget {
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: var(--glass-effect) !important;
+    /* Faster animation */
+    animation: findWidgetFade 0.08s ease forwards !important;
+    /* No delay */
+    transition-delay: 0ms !important;
+}
+
+/* Faster find widget appearance */
+@keyframes findWidgetFade {
+    from {
+        opacity: 0.8;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* COMMON UI ELEMENT STYLING */
+/* Panel and container styling */
+.editor-container,
+.panel,
+.sidebar {
+    box-shadow: var(--surface-depth1) !important;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s ease;
+}
+
+.editor-container:focus-within,
+.panel:focus-within,
+.sidebar:focus-within {
+    box-shadow: var(--surface-depth2) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-width: 2px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Scrolling behavior */
+.monaco-scrollable-element {
+    scroll-behavior: smooth !important;
+}
+
+/* Activity bar styling */
+.monaco-workbench .activitybar {
+    padding: 8px 0;
+}
+
+.monaco-workbench .activitybar .action-item {
+    margin: 6px 0;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.1, 1);
+    position: relative;
+}
+
+.monaco-workbench .activitybar .action-item:hover {
+    transform: translateX(2px);
+}
+
+.monaco-workbench .activitybar .action-item.checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 40%;
+    width: 3px;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    opacity: 0.8;
+    box-shadow: 0 0 6px currentColor;
+}
+
+.monaco-workbench .activitybar .action-item:active {
+    transform: translateX(3px);
+}
+
+/* Selection styling */
+::selection {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    background-color: rgba(110, 90, 150, 0.45) !important;
+    /* More visible selection color */
+    color: inherit !important;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Different selection color for dark themes */
+.vs-dark ::selection {
+    background-color: rgba(140, 110, 180, 0.45) !important;
+    /* Brighter for dark themes */
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Animation for newly selected text */
+@keyframes selectGlow {
+    0% {
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Brighter glow */
+    100% {
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+    }
+}
+
+.monaco-editor .selected-text {
+    animation: selectGlow 2s ease-in-out infinite !important;
+}
+
+.monaco-editor .cslr.selected-text {
+    background-color: rgba(110, 90, 150, 0.45) !important;
+    border-radius: 2px !important;
+    box-shadow: 0 0 1px rgba(140, 110, 180, 0.8) !important;
+    /* Subtle outline */
+}
+
+/* Breadcrumbs */
+.breadcrumbs-control {
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    transition: all 0.2s ease;
+    border-radius: var(--radius-sm);
+    padding: 2px 4px;
+}
+
+.breadcrumb-item:hover {
+    background-color: rgba(127, 127, 127, 0.1);
+}
+
+/* CURSOR AND EFFECTS STYLING */
+/* Cursor style */
+.monaco-editor .cursor {
+    transition: opacity 0.3s ease;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+/* Shadow trail for cursor */
+.gothic-cursor-trail {
+    position: fixed;
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(40, 20, 60, 0.4) 0%, rgba(30, 15, 40, 0.3) 40%, transparent 90%);
+    box-shadow: 0 0 12px rgba(20, 10, 30, 0.4);
+    z-index: 9999;
+    mix-blend-mode: multiply;
+    transition: opacity 0.5s;
+    filter: blur(3px);
+    opacity: 0.7;
+}
+
+/* Dark theme adjustments for shadow trail */
+.vs-dark .gothic-cursor-trail {
+    mix-blend-mode: screen;
+    background: radial-gradient(circle, rgba(80, 60, 100, 0.4) 0%, rgba(60, 40, 80, 0.25) 40%, transparent 90%);
+    box-shadow: 0 0 12px rgba(100, 80, 120, 0.3);
+}
+
+/* Candle glow effect */
+.gothic-candle-glow {
+    position: absolute;
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 200, 100, 0.2) 0%, transparent 70%);
+    filter: blur(6px);
+    z-index: 10;
+    mix-blend-mode: screen;
+    will-change: transform, opacity, filter;
+}
+
+/* FORM CONTROLS AND INPUTS */
+input,
+textarea,
+select {
+    transition: all 0.2s ease;
+    border-radius: var(--radius-sm);
+    padding: 4px 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--shadow-color);
+}
+
+.monaco-dropdown-button {
+    border-radius: var(--radius-sm) !important;
+    padding: 4px 8px !important;
+}
+
+.monaco-inputbox {
+    background-color: rgba(127, 127, 127, 0.05) !important;
+}
+
+/* Status bar */
+.monaco-workbench .part.statusbar {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 22px;
+}
+
+.monaco-workbench .part.statusbar .statusbar-item {
+    margin: 0 6px;
+    transition: all 0.2s var(--easing-standard) !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.monaco-workbench .part.statusbar .statusbar-item:hover {
+    opacity: 1;
+}
+
+/* Status bar item separators */
+.statusbar-item+.statusbar-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 30%;
+    bottom: 30%;
+    width: 1px;
+    background-color: rgba(127, 127, 127, 0.2);
+}
+
+/* MISC UI ELEMENTS */
+/* Dialog styling */
+.monaco-dialog-box {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: var(--glass-effect);
+}
+
+.monaco-dialog-box .dialog-buttons-row {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.monaco-dialog-box .monaco-button {
+    border-radius: var(--radius-sm);
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+
+.monaco-dialog-box .monaco-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar dividers */
+.split-view-view:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(127, 127, 127, 0.2), transparent);
+    z-index: 10;
+}
+
+/* Panel headers */
+.panel>.title {
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.panel>.title>.title-label {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+}
+
+/* Better minimap */
+.editor-scrollable+.minimap {
+    transition: opacity 0.3s ease;
+    opacity: 0.6;
+    border-left: 1px solid rgba(127, 127, 127, 0.1);
+}
+
+.editor-scrollable+.minimap:hover {
+    opacity: 1;
+}
+
+/* Tab close button */
+.tab-close {
+    opacity: 0;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+}
+
+.tab:hover .tab-close,
+.tab.active .tab-close {
+    opacity: 0.7;
+}
+
+.tab-close:hover {
+    opacity: 1 !important;
+    background-color: rgba(127, 127, 127, 0.1);
+}
+
+/* Clean badges styling */
+.monaco-count-badge {
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Optimized for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ENHANCED ERROR AND WARNING DISPLAY */
+/* Make error squiggles more prominent */
+.monaco-editor .squiggly-error {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23ff3333'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left !important;
+    animation: squigglyErrorAnimation 2s infinite linear !important;
+    background-size: 6px 3px !important;
+    height: 4px !important;
+    /* Even taller for more visibility */
+    background-position: bottom !important;
+    opacity: 0.9 !important;
+}
+
+/* Make warning squiggles more prominent */
+.monaco-editor .squiggly-warning {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23ffcc00'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left !important;
+    animation: squigglyWarningAnimation 2s infinite linear !important;
+    background-size: 6px 3px !important;
+    height: 4px !important;
+    /* Even taller for more visibility */
+    background-position: bottom !important;
+    opacity: 0.9 !important;
+}
+
+/* Add subtle pulse to error indicators */
+@keyframes squigglyErrorAnimation {
+    0% {
+        background-position: 0 calc(100% - 0px);
+        opacity: 0.8;
+    }
+
+    50% {
+        background-position: -3px calc(100% - 0px);
+        opacity: 1;
+    }
+
+    100% {
+        background-position: -6px calc(100% - 0px);
+        opacity: 0.8;
+    }
+}
+
+/* Add subtle pulse to warning indicators */
+@keyframes squigglyWarningAnimation {
+    0% {
+        background-position: 0 calc(100% - 0px);
+        opacity: 0.8;
+    }
+
+    50% {
+        background-position: -3px calc(100% - 0px);
+        opacity: 1;
+    }
+
+    100% {
+        background-position: -6px calc(100% - 0px);
+        opacity: 0.8;
+    }
+}
+
+/* Enhanced error tooltip (hover over error) */
+.monaco-editor-hover.monaco-editor-hover-content {
+    border-radius: var(--radius-sm) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: var(--glass-effect) !important;
+}
+
+.monaco-editor-hover.monaco-editor-hover-content[aria-label*="error" i] {
+    border-left: 3px solid #ff5555 !important;
+}
+
+.monaco-editor-hover.monaco-editor-hover-content[aria-label*="warning" i] {
+    border-left: 3px solid #ffcc00 !important;
+}
+
+/* Better error and warning styling in Problems panel */
+.marker-widget {
+    border-radius: var(--radius-sm) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.monaco-editor .error-widget {
+    border-radius: var(--radius-sm) !important;
+    border-left: 3px solid #ff5555 !important;
+    background-color: rgba(255, 85, 85, 0.08) !important;
+}
+
+.monaco-editor .warning-widget {
+    border-radius: var(--radius-sm) !important;
+    border-left: 3px solid #ffcc00 !important;
+    background-color: rgba(255, 204, 0, 0.08) !important;
+}
+
+/* Gutter error and warning indicators */
+.monaco-editor .margin-view-overlays .codicon-error,
+.monaco-editor .margin-view-overlays .codicon-warning {
+    opacity: 0.9 !important;
+    transform: scale(1.1) !important;
+}
+
+/* IMPROVED TEXT SELECTION */
+/* Enhance text selection visibility */
+::selection {
+    background-color: rgba(100, 80, 140, 0.4) !important;
+    /* Gothic-themed selection color */
+    color: inherit !important;
+    /* Maintain text color for better readability */
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Different selection color for dark themes */
+.vs-dark ::selection {
+    background-color: rgba(130, 100, 170, 0.4) !important;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Animation for newly selected text */
+@keyframes selectGlow {
+    0% {
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+    }
+}
+
+.monaco-editor .selected-text {
+    animation: selectGlow 2s ease-in-out infinite !important;
+}
+
+.monaco-editor .cslr.selected-text {
+    background-color: rgba(100, 80, 140, 0.4) !important;
+    border-radius: 2px !important;
+}
+
+/* GENERAL UI IMPROVEMENTS */
+
+/* Tab refinements for better visibility */
+.tabs-container .tab.active {
+    box-shadow: 0 -2px 0 var(--shadow-color) inset, 0 -1px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Improved search highlight visibility */
+.monaco-editor .findMatch {
+    background-color: rgba(140, 100, 180, 0.45) !important;
+    /* More visible */
+    border: 1px solid rgba(140, 100, 180, 0.8) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 5px rgba(140, 100, 180, 0.4) !important;
+}
+
+.monaco-editor .currentFindMatch {
+    background-color: rgba(170, 130, 210, 0.55) !important;
+    /* Even more visible */
+    border: 1px solid rgba(190, 150, 230, 0.9) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 8px rgba(170, 130, 210, 0.5) !important;
+    animation: findMatchPulse 2s infinite ease-in-out !important;
+}
+
+/* Add subtle animation to current match */
+@keyframes findMatchPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(170, 130, 210, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 10px rgba(170, 130, 210, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(170, 130, 210, 0.4);
+    }
+}
+
+/* Improve visibility of suggestion widget items */
+.monaco-editor .suggest-widget .monaco-list .monaco-list-row.focused {
+    background-color: rgba(100, 80, 140, 0.2) !important;
+    transform: translateX(3px) !important;
+    border-left: 2px solid rgba(100, 80, 140, 0.5) !important;
+}
+
+/* Improve notification visibility */
+.monaco-workbench .notification-toast {
+    border-radius: var(--radius-md) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Better error notifications */
+.monaco-workbench .notification-toast.error {
+    box-shadow: 0 6px 20px rgba(255, 80, 80, 0.2) !important;
+    border-left: 3px solid #ff5555 !important;
+}
+
+/* Better warning notifications */
+.monaco-workbench .notification-toast.warning {
+    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.2) !important;
+    border-left: 3px solid #ffcc00 !important;
+}
+
+/* Improve focus states */
+*:focus-visible {
+    outline: 2px solid rgba(100, 80, 140, 0.5) !important;
+    outline-offset: 2px !important;
+}
+
+/* Improve separator visibility */
+.monaco-editor .editor-widget .separator {
+    border-color: rgba(127, 127, 127, 0.3) !important;
+}
+
+/* COMPREHENSIVE ANIMATION ENHANCEMENTS */
+/* Animate editor transitions */
+.monaco-editor {
+    transition: opacity var(--transition-medium) var(--easing-standard),
+        transform var(--transition-medium) var(--easing-standard) !important;
+}
+
+.monaco-editor.focused {
+    transform: translateZ(0) !important;
+}
+
+/* Editor widget animations */
+.monaco-editor .editor-widget {
+    transition: opacity var(--transition-fast) var(--easing-standard),
+        transform var(--transition-fast) var(--easing-standard) !important;
+}
+
+/* Panel animations */
+.monaco-workbench .part.panel .composite.title {
+    transition: height var(--transition-medium) var(--easing-standard) !important;
+}
+
+.split-view-view {
+    transition: width var(--transition-medium) var(--easing-standard),
+        height var(--transition-medium) var(--easing-standard) !important;
+}
+
+/* Sidebar animation */
+.monaco-workbench .part.sidebar>.content {
+    transition: width var(--transition-medium) var(--easing-standard),
+        transform var(--transition-medium) var(--easing-standard) !important;
+}
+
+/* Activity bar icons */
+.monaco-workbench .activitybar .action-label {
+    transition: transform var(--transition-fast) var(--easing-standard),
+        opacity var(--transition-fast) var(--easing-standard) !important;
+}
+
+/* Button and control animations */
+.monaco-button,
+.monaco-text-button,
+.action-item .action-label {
+    transition: background-color var(--transition-fast) var(--easing-standard),
+        color var(--transition-fast) var(--easing-standard),
+        border-color var(--transition-fast) var(--easing-standard),
+        box-shadow var(--transition-fast) var(--easing-standard),
+        transform var(--transition-fast) var(--easing-standard) !important;
+}
+
+/* Animate list row expansion and selection */
+.monaco-list-row {
+    transition: background-color var(--transition-fast) var(--easing-standard),
+        border-color var(--transition-fast) var(--easing-standard),
+        transform var(--transition-fast) var(--easing-standard),
+        height var(--transition-fast) var(--easing-standard) !important;
+}
+
+.monaco-list-row.selected,
+.monaco-list-row.focused {
+    transform: translateX(2px) !important;
+}
+
+/* Animate panel resizing */
+.monaco-sash {
+    transition: background-color var(--transition-fast) var(--easing-standard) !important;
+}
+
+.monaco-sash:hover {
+    background-color: var(--shadow-color) !important;
+}
+
+/* Animate tab switching */
+.tab {
+    transition: opacity var(--transition-medium) var(--easing-decelerate),
+        background-color var(--transition-medium) var(--easing-standard),
+        border-color var(--transition-medium) var(--easing-standard),
+        transform var(--transition-medium) var(--easing-standard),
+        box-shadow var(--transition-medium) var(--easing-standard) !important;
+}
+
+/* Title bar animations */
+.window-title {
+    transition: opacity var(--transition-slow) var(--easing-decelerate) !important;
+}
+
+/* Status bar animations */
+.monaco-workbench .part.statusbar .statusbar-item {
+    transition: all 0.2s var(--easing-standard) !important;
+}
+
+/* Editor content animations */
+.monaco-editor .view-lines {
+    animation: editorFadeIn 200ms var(--easing-standard) !important;
+}
+
+@keyframes editorFadeIn {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Smooth collapsible section animations */
+.collapsible-header {
+    transition: background-color var(--transition-fast) var(--easing-standard) !important;
+}
+
+.collapsible-body {
+    transition: max-height var(--transition-medium) var(--easing-standard),
+        opacity var(--transition-medium) var(--easing-standard) !important;
+}

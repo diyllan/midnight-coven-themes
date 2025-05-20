@@ -1,0 +1,288 @@
+{
+  "name": "midnight-coven-themes",
+  "displayName": "Midnight Coven: Gothic Theme Collection",
+  "description": "A collection of dark, gothic-inspired themes for nocturnal coders",
+  "version": "2.0.0",
+  "publisher": "gothic-theme",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "browser": "./browser-extension.js",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "gothic",
+    "midnight",
+    "coven",
+    "vampire",
+    "cemetery",
+    "cathedral",
+    "raven",
+    "twilight",
+    "emerald",
+    "blood moon",
+    "absinthe",
+    "amber"
+  ],
+  "extensionDependencies": [],
+  "extensionPack": [],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "extensionSuggestions": [
+    "s-nlf-fh.glassit",
+    "be5invis.vscode-custom-css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vsce package",
+    "publish": "vsce publish"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gothic Cathedral",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-cathedral.json"
+      },
+      {
+        "label": "Gothic Cathedral High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-cathedral-high-contrast.json"
+      },
+      {
+        "label": "Gothic Cemetery",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-cemetery.json"
+      },
+      {
+        "label": "Gothic Cemetery High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-cemetery-high-contrast.json"
+      },
+      {
+        "label": "Gothic Vampire",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-vampire.json"
+      },
+      {
+        "label": "Gothic Vampire High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-vampire-high-contrast.json"
+      },
+      {
+        "label": "Gothic Jester",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-jester.json"
+      },
+      {
+        "label": "Gothic Jester High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-jester-high-contrast.json"
+      },
+      {
+        "label": "Gothic Cozy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-cozy.json"
+      },
+      {
+        "label": "Gothic Light",
+        "uiTheme": "vs",
+        "path": "./themes/gothic-light.json"
+      },
+      {
+        "label": "Gothic Absinthe",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-absinthe.json"
+      },
+      {
+        "label": "Gothic Absinthe High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-absinthe-high-contrast.json"
+      },
+      {
+        "label": "Gothic Raven",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-raven.json"
+      },
+      {
+        "label": "Gothic Raven High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-raven-high-contrast.json"
+      },
+      {
+        "label": "Gothic Blood Moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-blood-moon.json"
+      },
+      {
+        "label": "Gothic Blood Moon High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-blood-moon-high-contrast.json"
+      },
+      {
+        "label": "Gothic Emerald Crypt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-emerald-crypt.json"
+      },
+      {
+        "label": "Gothic Emerald Crypt High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-emerald-crypt-high-contrast.json"
+      },
+      {
+        "label": "Gothic Midnight Rose",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-midnight-rose.json"
+      },
+      {
+        "label": "Gothic Midnight Rose High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-midnight-rose-high-contrast.json"
+      },
+      {
+        "label": "Gothic Amber Fog",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-amber-fog.json"
+      },
+      {
+        "label": "Gothic Amber Fog High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-amber-fog-high-contrast.json"
+      },
+      {
+        "label": "Gothic Twilight Forest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-twilight-forest.json"
+      },
+      {
+        "label": "Gothic Twilight Forest High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/gothic-twilight-forest-high-contrast.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "gothic-icons",
+        "label": "Gothic File Icons",
+        "path": "./icons/gothic-icon-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "gothic-cathedral-theme.reloadEffects",
+        "title": "Gothic Theme: Reload Effects"
+      },
+      {
+        "command": "gothic-cathedral-theme.showSettings",
+        "title": "Gothic Theme: Show Effect Settings"
+      },
+      {
+        "command": "gothic-cathedral-theme.togglePerformanceMode",
+        "title": "Gothic Theme: Toggle Performance Mode"
+      },
+      {
+        "command": "gothic-cathedral-theme.enableEffects",
+        "title": "Gothic Theme: Enable Special Effects"
+      },
+      {
+        "command": "gothic-cathedral-theme.toggleEffects",
+        "title": "Gothic Cathedral Theme: Toggle Visual Effects"
+      },
+      {
+        "command": "gothic-cathedral-theme.setPerformanceMode",
+        "title": "Gothic Cathedral Theme: Set Performance Mode"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Gothic Cathedral Theme Settings",
+      "properties": {
+        "gothic-cathedral-theme.effectsEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable all special visual effects"
+        },
+        "gothic-cathedral-theme.effectsIntensity": {
+          "type": "string",
+          "enum": [
+            "low",
+            "normal",
+            "high"
+          ],
+          "default": "normal",
+          "description": "Control the intensity of visual effects"
+        },
+        "gothic-cathedral-theme.enableAudio": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable or disable audio effects"
+        },
+        "gothic-cathedral-theme.reduceAnimationsOnBattery": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically reduce effects when on battery power"
+        },
+        "gothicCathedral.effectsEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable visual effects for Gothic Cathedral themes"
+        },
+        "gothicCathedral.performanceMode": {
+          "type": "string",
+          "enum": [
+            "low",
+            "normal",
+            "high"
+          ],
+          "default": "normal",
+          "description": "Set the intensity level of visual effects"
+        },
+        "gothicCathedral.audioEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable audio effects for Gothic Cathedral themes"
+        },
+        "gothicCathedral.batteryConservation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Reduce effects when running on battery power"
+        }
+      }
+    }
+  },
+  "files": [
+    "themes/*.json",
+    "js/*.js",
+    "css/*.css",
+    "icons/**/*",
+    "ENHANCEMENT-SUMMARY.md",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "images/**/*",
+    "audio/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/midnight-coven-themes"
+  },
+  "homepage": "https://github.com/yourusername/midnight-coven-themes#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/midnight-coven-themes/issues"
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true,
+      "description": "Theme visual effects work in untrusted workspaces."
+    }
+  }
+}

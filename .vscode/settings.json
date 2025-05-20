@@ -1,0 +1,29 @@
+{
+  "editor.fontFamily": "Geist Light",
+  "terminal.integrated.fontFamily": "Geist  Mono Light",
+  "chat.editor.fontFamily": "Geist Light",
+  "debug.console.fontFamily": "Geist Light",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "workbench.tree.indent": 20,
+  "editor.foldingImportsByDefault": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "animations.Enabled": true,
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/css/custom.css",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/css/theme-effects.css",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/js/custom.js",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/js/theme-effects.js",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/js/cursor-effects.js",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/js/candle-effects.js",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/js/productivity-enhancements.js",
+    "file:///C:/Users/Dylan/.vscode/extensions/gothic-cathedral-theme/js/theme-settings.js"
+  ]
+}
