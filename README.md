@@ -1,12 +1,12 @@
 # Midnight Coven: Gothic Theme Collection
 
-A comprehensive collection of 20 dark, gothic-inspired color themes for Visual Studio Code. Perfect for nocturnal coders who appreciate dark aesthetics and atmospheric coding environments.
+A comprehensive collection of 21 dark, gothic-inspired color themes for Visual Studio Code. Perfect for nocturnal coders who appreciate dark aesthetics and atmospheric coding environments.
 
 ## 🎨 Theme Gallery
 
 ![All Themes Overview](images/gallery-overview.png)
 
-Explore our collection of 20 atmospheric gothic themes:
+Explore our collection of 21 atmospheric gothic themes:
 
 ### Featured Themes
 
@@ -21,7 +21,7 @@ Explore our collection of 20 atmospheric gothic themes:
 | *Deep purples and magentas with rose highlights* | *Forest greens with mysterious twilight blues* | *Dark reds and oranges evoking lunar eclipses* |
 
 <details>
-<summary><strong>📖 View All 20 Themes</strong></summary>
+<summary><strong>📖 View All 21 Themes</strong></summary>
 
 ### Complete Collection
 
@@ -47,12 +47,14 @@ Explore our collection of 20 atmospheric gothic themes:
 | **Gothic Shadow Grove** | ![Gothic Shadow Grove](images/themes/gothic-shadow-grove.png) | Dark forest greens with whispered shadows |
 | **Gothic Victorian Mourning** | ![Gothic Victorian Mourning](images/themes/gothic-victorian-mourning.png) | Elegant purples with period sophistication |
 | **Gothic Spider Lily** | ![Gothic Spider Lily](images/themes/gothic-spider-lily.png) | Romantic reds and pinks with floral elegance |
+| **Gothic Qaddy** | ![Gothic Qaddy](images/themes/gothic-qaddy.png) | Dark+ inspired theme with off-white foreground and dark beige comments |
+| **Gothic Qaddy Mocca** | ![Gothic Qaddy Mocca](images/themes/gothic-qaddy-mocca.png) | A blend of Gothic Qaddy and Catppuccin Mocha: soft, modern, and atmospheric |
 
 </details>
 
 ## 🎨 Color Themes
 
-This extension includes 20 carefully crafted gothic themes, each with its own unique atmosphere:
+This extension includes 22 carefully crafted gothic themes, each with its own unique atmosphere:
 
 - **Gothic Cathedral** - Inspired by stained glass and gothic architecture
 - **Gothic Cemetery** - Cool, misty tones of foggy graveyards
@@ -74,6 +76,8 @@ This extension includes 20 carefully crafted gothic themes, each with its own un
 - **Gothic Shadow Grove** - Dark forest greens with whispered shadows
 - **Gothic Victorian Mourning** - Elegant purples with period sophistication
 - **Gothic Spider Lily** - Romantic reds and pinks with floral elegance
+- **Gothic Qaddy** - Dark+ inspired theme with off-white foreground and dark beige comments
+- **Gothic Qaddy Mocca** - A blend of Gothic Qaddy and Catppuccin Mocha: soft, modern, and atmospheric
 
 ## 🚀 Planned Features
 
@@ -81,7 +85,7 @@ This extension includes 20 carefully crafted gothic themes, each with its own un
 
 ## ✨ Features
 
-- **20 Unique Themes**: Each theme creates a distinctive gothic atmosphere
+- **21 Unique Themes**: Each theme creates a distinctive gothic atmosphere
 - **Rich Color Palettes**: Carefully selected colors that enhance readability while maintaining gothic aesthetics
 - **Semantic Highlighting**: Intelligent syntax highlighting that makes code structure clear
 - **Complete UI Theming**: Consistent styling across all VS Code interface elements

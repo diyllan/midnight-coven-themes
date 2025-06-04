@@ -2,7 +2,7 @@
   "name": "midnight-coven-themes",
   "displayName": "Midnight Coven: Gothic Theme Collection",
   "description": "A collection of dark, gothic-inspired themes for nocturnal coders",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publisher": "diyllan",
   "icon": "images/extension_icon.png",
   "engines": {
@@ -141,6 +141,16 @@
         "label": "Gothic Spider Lily",
         "uiTheme": "vs-dark",
         "path": "./themes/gothic-spider-lily.json"
+      },
+      {
+        "label": "Gothic Qaddy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-qaddy.json"
+      },
+      {
+        "label": "Gothic Qaddy Mocca",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-qaddy-mocca.json"
       }
     ]
   },
