@@ -2,12 +2,6 @@
   "name": "Gothic Blood Moon",
   "type": "dark",
   "semanticHighlighting": true,
-  "themeSpecificSettings": {
-    "cursorTrailEffect": "eclipse",
-    "focusEffects": "lunar",
-    "animationIntensity": "high",
-    "specialElements": "crimson"
-  },
   "colors": {
     "editor.background": "#170c0c",
     "editor.foreground": "#e0d0d0",
@@ -90,8 +84,8 @@
     "editorLink.activeForeground": "#ff6060",
     "editorBracketMatch.background": "#40202060",
     "editorBracketMatch.border": "#ff4040",
-    "editorError.foreground": "#ff6060",
-    "editorWarning.foreground": "#ff9060",
+    "editorError.foreground": "#ff8533",
+    "editorWarning.foreground": "#ffcc33",
     "editorInfo.foreground": "#905080",
     "editorHint.foreground": "#c06060",
     "editorIndentGuide.background": "#25151560",

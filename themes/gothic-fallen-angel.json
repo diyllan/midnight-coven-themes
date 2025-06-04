@@ -1,0 +1,105 @@
+{
+    "name": "Gothic Fallen Angel",
+    "type": "dark",
+    "semanticHighlighting": true,
+    "colors": {
+        "editor.background": "#0f0f1a",
+        "editor.foreground": "#f0f0ff",
+        "editor.lineHighlightBackground": "#1a1a2a",
+        "editor.selectionBackground": "#3a3a5a",
+        "editorCursor.foreground": "#87ceeb",
+        "activityBar.background": "#0a0a15",
+        "activityBar.foreground": "#f0f0ff",
+        "activityBar.activeBorder": "#87ceeb",
+        "activityBar.inactiveForeground": "#8a8ab0",
+        "activityBarBadge.background": "#4169e1",
+        "activityBarBadge.foreground": "#ffffff",
+        "sideBar.background": "#0f0f1a",
+        "sideBar.foreground": "#f0f0ff",
+        "sideBar.border": "#1a1a2a",
+        "sideBarTitle.foreground": "#b0c4de",
+        "sideBarSectionHeader.background": "#1a1a2a",
+        "sideBarSectionHeader.foreground": "#f0f0ff",
+        "statusBar.background": "#0a0a15",
+        "statusBar.foreground": "#f0f0ff",
+        "statusBar.border": "#1a1a2a",
+        "statusBar.debuggingBackground": "#4169e1",
+        "statusBar.debuggingForeground": "#ffffff",
+        "statusBarItem.remoteBackground": "#4169e1",
+        "statusBarItem.remoteForeground": "#ffffff",
+        "titleBar.activeBackground": "#0a0a15",
+        "titleBar.activeForeground": "#f0f0ff",
+        "titleBar.inactiveBackground": "#0a0a15",
+        "titleBar.inactiveForeground": "#8a8ab0",
+        "tab.activeBackground": "#1a1a2a",
+        "tab.activeForeground": "#f0f0ff",
+        "tab.inactiveBackground": "#0f0f1a",
+        "tab.inactiveForeground": "#8a8ab0",
+        "tab.activeBorderTop": "#87ceeb",
+        "editorError.foreground": "#ff6347",
+        "editorWarning.foreground": "#ffd700",
+        "editorInfo.foreground": "#87ceeb",
+        "editorHint.foreground": "#b0c4de",
+        "list.activeSelectionBackground": "#3a3a5a",
+        "list.activeSelectionForeground": "#f0f0ff",
+        "list.errorForeground": "#ff6347",
+        "list.warningForeground": "#ffd700"
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#7a7aa0",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#4169e1",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "constant.other.symbol"
+            ],
+            "settings": {
+                "foreground": "#b0c4de"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#87ceeb"
+            }
+        },
+        {
+            "name": "Classes and Types",
+            "scope": [
+                "entity.name.class",
+                "entity.name.type",
+                "support.class"
+            ],
+            "settings": {
+                "foreground": "#6495ed",
+                "fontStyle": "bold"
+            }
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "name": "Gothic Coven's Call",
+    "type": "dark",
+    "semanticHighlighting": true,
+    "colors": {
+        "editor.background": "#1a0f1a",
+        "editor.foreground": "#f0e0f0",
+        "editor.lineHighlightBackground": "#2a1a2a",
+        "editor.selectionBackground": "#4a2a4a",
+        "editorCursor.foreground": "#da70d6",
+        "activityBar.background": "#0f0a0f",
+        "activityBar.foreground": "#f0e0f0",
+        "activityBar.activeBorder": "#da70d6",
+        "activityBar.inactiveForeground": "#a080a0",
+        "activityBarBadge.background": "#8b008b",
+        "activityBarBadge.foreground": "#ffffff",
+        "sideBar.background": "#1a0f1a",
+        "sideBar.foreground": "#f0e0f0",
+        "sideBar.border": "#2a1a2a",
+        "sideBarTitle.foreground": "#ee82ee",
+        "sideBarSectionHeader.background": "#2a1a2a",
+        "sideBarSectionHeader.foreground": "#f0e0f0",
+        "statusBar.background": "#0f0a0f",
+        "statusBar.foreground": "#f0e0f0",
+        "statusBar.border": "#2a1a2a",
+        "statusBar.debuggingBackground": "#8b008b",
+        "statusBar.debuggingForeground": "#ffffff",
+        "statusBarItem.remoteBackground": "#8b008b",
+        "statusBarItem.remoteForeground": "#ffffff",
+        "titleBar.activeBackground": "#0f0a0f",
+        "titleBar.activeForeground": "#f0e0f0",
+        "titleBar.inactiveBackground": "#0f0a0f",
+        "titleBar.inactiveForeground": "#a080a0",
+        "tab.activeBackground": "#2a1a2a",
+        "tab.activeForeground": "#f0e0f0",
+        "tab.inactiveBackground": "#1a0f1a",
+        "tab.inactiveForeground": "#a080a0",
+        "tab.activeBorderTop": "#da70d6",
+        "editorError.foreground": "#ff4d6d",
+        "editorWarning.foreground": "#ffb347",
+        "editorInfo.foreground": "#87ceeb",
+        "editorHint.foreground": "#da70d6",
+        "list.activeSelectionBackground": "#4a2a4a",
+        "list.activeSelectionForeground": "#f0e0f0",
+        "list.errorForeground": "#ff4d6d",
+        "list.warningForeground": "#ffb347"
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#9070a0",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#8b008b",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "constant.other.symbol"
+            ],
+            "settings": {
+                "foreground": "#ee82ee"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#da70d6"
+            }
+        },
+        {
+            "name": "Classes and Types",
+            "scope": [
+                "entity.name.class",
+                "entity.name.type",
+                "support.class"
+            ],
+            "settings": {
+                "foreground": "#ba55d3",
+                "fontStyle": "bold"
+            }
+        }
+    ]
+}

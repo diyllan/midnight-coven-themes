@@ -2,12 +2,6 @@
   "name": "Gothic Twilight Forest",
   "type": "dark",
   "semanticHighlighting": true,
-  "themeSpecificSettings": {
-    "cursorTrailEffect": "mist",
-    "focusEffects": "leaf",
-    "animationIntensity": "medium",
-    "specialElements": "forest"
-  },
   "colors": {
     "editor.background": "#0f1a15",
     "editor.foreground": "#d5e5e0",

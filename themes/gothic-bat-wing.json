@@ -1,0 +1,128 @@
+{
+    "name": "Gothic Bat Wing",
+    "type": "dark",
+    "semanticHighlighting": true,
+    "colors": {
+        "editor.background": "#0a0a12",
+        "editor.foreground": "#e5e5f0",
+        "editor.lineHighlightBackground": "#151520",
+        "editor.selectionBackground": "#2a2a40",
+        "editorCursor.foreground": "#6a5acd",
+        "activityBar.background": "#050508",
+        "activityBar.foreground": "#e5e5f0",
+        "activityBar.activeBorder": "#6a5acd",
+        "activityBar.inactiveForeground": "#7a7a90",
+        "activityBarBadge.background": "#6a5acd",
+        "activityBarBadge.foreground": "#ffffff",
+        "sideBar.background": "#0a0a12",
+        "sideBar.foreground": "#e5e5f0",
+        "sideBar.border": "#151520",
+        "sideBarTitle.foreground": "#9370db",
+        "sideBarSectionHeader.background": "#151520",
+        "sideBarSectionHeader.foreground": "#e5e5f0",
+        "statusBar.background": "#050508",
+        "statusBar.foreground": "#e5e5f0",
+        "statusBar.border": "#151520",
+        "statusBar.debuggingBackground": "#6a5acd",
+        "statusBar.debuggingForeground": "#ffffff",
+        "statusBarItem.remoteBackground": "#6a5acd",
+        "statusBarItem.remoteForeground": "#ffffff",
+        "titleBar.activeBackground": "#050508",
+        "titleBar.activeForeground": "#e5e5f0",
+        "titleBar.inactiveBackground": "#050508",
+        "titleBar.inactiveForeground": "#7a7a90",
+        "tab.activeBackground": "#151520",
+        "tab.activeForeground": "#e5e5f0",
+        "tab.inactiveBackground": "#0a0a12",
+        "tab.inactiveForeground": "#7a7a90",
+        "tab.activeBorderTop": "#6a5acd",
+        "editorError.foreground": "#ff6b47",
+        "editorWarning.foreground": "#ffa500",
+        "editorInfo.foreground": "#4fc3f7",
+        "editorHint.foreground": "#9370db",
+        "list.activeSelectionBackground": "#2a2a40",
+        "list.activeSelectionForeground": "#e5e5f0",
+        "list.hoverBackground": "#151520",
+        "list.hoverForeground": "#e5e5f0",
+        "list.errorForeground": "#ff6b47",
+        "list.warningForeground": "#ffa500"
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#6a6a80",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#6a5acd",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "constant.other.symbol"
+            ],
+            "settings": {
+                "foreground": "#dda0dd"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#9370db"
+            }
+        },
+        {
+            "name": "Classes and Types",
+            "scope": [
+                "entity.name.class",
+                "entity.name.type",
+                "support.class"
+            ],
+            "settings": {
+                "foreground": "#ba55d3",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Variables",
+            "scope": [
+                "variable",
+                "string constant.other.placeholder"
+            ],
+            "settings": {
+                "foreground": "#e5e5f0"
+            }
+        },
+        {
+            "name": "Constants and Numbers",
+            "scope": [
+                "constant.numeric",
+                "constant.language",
+                "constant.character"
+            ],
+            "settings": {
+                "foreground": "#da70d6"
+            }
+        }
+    ]
+}

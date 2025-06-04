@@ -1,0 +1,105 @@
+{
+    "name": "Gothic Shadow Grove",
+    "type": "dark",
+    "semanticHighlighting": true,
+    "colors": {
+        "editor.background": "#0a140a",
+        "editor.foreground": "#d0e0d0",
+        "editor.lineHighlightBackground": "#152015",
+        "editor.selectionBackground": "#253525",
+        "editorCursor.foreground": "#66cc66",
+        "activityBar.background": "#050a05",
+        "activityBar.foreground": "#d0e0d0",
+        "activityBar.activeBorder": "#66cc66",
+        "activityBar.inactiveForeground": "#6a8a6a",
+        "activityBarBadge.background": "#2d4a2d",
+        "activityBarBadge.foreground": "#ffffff",
+        "sideBar.background": "#0a140a",
+        "sideBar.foreground": "#d0e0d0",
+        "sideBar.border": "#152015",
+        "sideBarTitle.foreground": "#80c080",
+        "sideBarSectionHeader.background": "#152015",
+        "sideBarSectionHeader.foreground": "#d0e0d0",
+        "statusBar.background": "#050a05",
+        "statusBar.foreground": "#d0e0d0",
+        "statusBar.border": "#152015",
+        "statusBar.debuggingBackground": "#2d4a2d",
+        "statusBar.debuggingForeground": "#ffffff",
+        "statusBarItem.remoteBackground": "#2d4a2d",
+        "statusBarItem.remoteForeground": "#ffffff",
+        "titleBar.activeBackground": "#050a05",
+        "titleBar.activeForeground": "#d0e0d0",
+        "titleBar.inactiveBackground": "#050a05",
+        "titleBar.inactiveForeground": "#6a8a6a",
+        "tab.activeBackground": "#152015",
+        "tab.activeForeground": "#d0e0d0",
+        "tab.inactiveBackground": "#0a140a",
+        "tab.inactiveForeground": "#6a8a6a",
+        "tab.activeBorderTop": "#66cc66",
+        "editorError.foreground": "#ff6b47",
+        "editorWarning.foreground": "#ffa500",
+        "editorInfo.foreground": "#4fc3f7",
+        "editorHint.foreground": "#66cc66",
+        "list.activeSelectionBackground": "#253525",
+        "list.activeSelectionForeground": "#d0e0d0",
+        "list.errorForeground": "#ff6b47",
+        "list.warningForeground": "#ffa500"
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#5a7a5a",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#2d4a2d",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "constant.other.symbol"
+            ],
+            "settings": {
+                "foreground": "#80c080"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#66cc66"
+            }
+        },
+        {
+            "name": "Classes and Types",
+            "scope": [
+                "entity.name.class",
+                "entity.name.type",
+                "support.class"
+            ],
+            "settings": {
+                "foreground": "#4a8a4a",
+                "fontStyle": "bold"
+            }
+        }
+    ]
+}

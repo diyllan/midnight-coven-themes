@@ -1,73 +1,92 @@
 # Midnight Coven: Gothic Theme Collection
 
-A comprehensive collection of dark, gothic-inspired color themes and file icons for Visual Studio Code. Perfect for nocturnal coders who appreciate dark aesthetics and atmospheric coding environments.
+A comprehensive collection of 20 dark, gothic-inspired color themes for Visual Studio Code. Perfect for nocturnal coders who appreciate dark aesthetics and atmospheric coding environments.
+
+## 🎨 Theme Gallery
+
+![All Themes Overview](images/gallery-overview.png)
+
+Explore our collection of 20 atmospheric gothic themes:
+
+### Featured Themes
+
+| Gothic Cathedral | Gothic Vampire | Gothic Emerald Crypt |
+|:---:|:---:|:---:|
+| ![Gothic Cathedral](images/themes/gothic-cathedral.png) | ![Gothic Vampire](images/themes/gothic-vampire.png) | ![Gothic Emerald Crypt](images/themes/gothic-emerald-crypt.png) |
+| *Inspired by stained glass and gothic architecture* | *Deep crimson and blood-red accents* | *Rich emerald greens with mystical accents* |
+
+| Gothic Midnight Rose | Gothic Twilight Forest | Gothic Blood Moon |
+|:---:|:---:|:---:|
+| ![Gothic Midnight Rose](images/themes/gothic-midnight-rose.png) | ![Gothic Twilight Forest](images/themes/gothic-twilight-forest.png) | ![Gothic Blood Moon](images/themes/gothic-blood-moon.png) |
+| *Deep purples and magentas with rose highlights* | *Forest greens with mysterious twilight blues* | *Dark reds and oranges evoking lunar eclipses* |
+
+<details>
+<summary><strong>📖 View All 20 Themes</strong></summary>
+
+### Complete Collection
+
+| Theme | Preview | Description |
+|-------|:-------:|-------------|
+| **Gothic Cathedral** | ![Gothic Cathedral](images/themes/gothic-cathedral.png) | Inspired by stained glass and gothic architecture |
+| **Gothic Cemetery** | ![Gothic Cemetery](images/themes/gothic-cemetary.png) | Cool, misty tones of foggy graveyards |
+| **Gothic Vampire** | ![Gothic Vampire](images/themes/gothic-vampire.png) | Deep crimson and blood-red accents (enhanced error visibility) |
+| **Gothic Jester** | ![Gothic Jester](images/themes/gothic-jester.png) | Vibrant yet dark medieval court inspiration |
+| **Gothic Absinthe** | ![Gothic Absinthe](images/themes/gothic-absinthe.png) | Mysterious green tones with ethereal highlights |
+| **Gothic Raven** | ![Gothic Raven](images/themes/gothic-raven.png) | Deep blacks with subtle purple undertones |
+| **Gothic Blood Moon** | ![Gothic Blood Moon](images/themes/gothic-blood-moon.png) | Dark reds and oranges evoking lunar eclipses (enhanced error visibility) |
+| **Gothic Emerald Crypt** | ![Gothic Emerald Crypt](images/themes/gothic-emerald-crypt.png) | Rich emerald greens with mystical accents |
+| **Gothic Midnight Rose** | ![Gothic Midnight Rose](images/themes/gothic-midnight-rose.png) | Deep purples and magentas with rose highlights |
+| **Gothic Amber Fog** | ![Gothic Amber Fog](images/themes/gothic-amber-fog.png) | Warm amber and gold tones through misty grays |
+| **Gothic Twilight Forest** | ![Gothic Twilight Forest](images/themes/gothic-twilight-forest.png) | Forest greens with mysterious twilight blues |
+| **Gothic Bat Wing** | ![Gothic Bat Wing](images/themes/gothic-bat-wing.png) | Deep purples and blues with nocturnal atmosphere |
+| **Gothic Death's Embrace** | ![Gothic Death's Embrace](images/themes/gothic-death-embrace.png) | Monochromatic grays with subtle contrasts |
+| **Gothic Fallen Angel** | ![Gothic Fallen Angel](images/themes/gothic-fallen-angel.png) | Celestial blues with divine inspiration |
+| **Gothic Witch's Brew** | ![Gothic Witch's Brew](images/themes/gothic-witch-brew.png) | Earthy greens with magical undertones |
+| **Gothic Moon Ritual** | ![Gothic Moon Ritual](images/themes/gothic-moon-ritual.png) | Mystical purples with lunar aesthetics |
+| **Gothic Coven's Call** | ![Gothic Coven's Call](images/themes/gothic-coven-call.png) | Rich magentas for mysterious gatherings |
+| **Gothic Shadow Grove** | ![Gothic Shadow Grove](images/themes/gothic-shadow-grove.png) | Dark forest greens with whispered shadows |
+| **Gothic Victorian Mourning** | ![Gothic Victorian Mourning](images/themes/gothic-victorian-mourning.png) | Elegant purples with period sophistication |
+| **Gothic Spider Lily** | ![Gothic Spider Lily](images/themes/gothic-spider-lily.png) | Romantic reds and pinks with floral elegance |
+
+</details>
 
 ## 🎨 Color Themes
 
-This extension includes 13 carefully crafted gothic themes, each with its own unique atmosphere:
+This extension includes 20 carefully crafted gothic themes, each with its own unique atmosphere:
 
-### Dark Themes
-
-- **Gothic Cathedral** - Inspired by the somber majesty of gothic cathedrals with muted stained glass colors
-- **Gothic Cemetery** - Cool, misty tones reminiscent of foggy graveyards
-- **Gothic Vampire** - Deep crimson and blood-red accents on dark backgrounds
-- **Gothic Jester** - Vibrant yet dark with medieval court jester inspiration
-- **Gothic Cozy** - Warm earth tones and amber accents for comfortable late-night coding
+- **Gothic Cathedral** - Inspired by stained glass and gothic architecture
+- **Gothic Cemetery** - Cool, misty tones of foggy graveyards
+- **Gothic Vampire** - Deep crimson and blood-red accents (enhanced error visibility)
+- **Gothic Jester** - Vibrant yet dark medieval court inspiration
 - **Gothic Absinthe** - Mysterious green tones with ethereal highlights
 - **Gothic Raven** - Deep blacks with subtle purple undertones
-- **Gothic Blood Moon** - Dark reds and oranges evoking lunar eclipses
+- **Gothic Blood Moon** - Dark reds and oranges evoking lunar eclipses (enhanced error visibility)
 - **Gothic Emerald Crypt** - Rich emerald greens with mystical accents
-- **Gothic Midnight Rose** - Deep purples and magentas with rose-inspired highlights
+- **Gothic Midnight Rose** - Deep purples and magentas with rose highlights
 - **Gothic Amber Fog** - Warm amber and gold tones through misty grays
 - **Gothic Twilight Forest** - Forest greens with mysterious twilight blues
+- **Gothic Bat Wing** - Deep purples and blues with nocturnal atmosphere
+- **Gothic Death's Embrace** - Monochromatic grays with subtle contrasts
+- **Gothic Fallen Angel** - Celestial blues with divine inspiration
+- **Gothic Witch's Brew** - Earthy greens with magical undertones
+- **Gothic Moon Ritual** - Mystical purples with lunar aesthetics
+- **Gothic Coven's Call** - Rich magentas for mysterious gatherings
+- **Gothic Shadow Grove** - Dark forest greens with whispered shadows
+- **Gothic Victorian Mourning** - Elegant purples with period sophistication
+- **Gothic Spider Lily** - Romantic reds and pinks with floral elegance
 
-### Light Theme
+## 🚀 Planned Features
 
-- **Gothic Light** - A lighter theme with elegant purple accents, maintaining gothic aesthetics for daytime use
-
-### High Contrast Variants
-
-Each dark theme includes a high-contrast version for improved accessibility and visibility.
-
-## 🎯 Gothic File Icons
-
-The extension includes a complete gothic-themed icon set featuring:
-
-- **File Icons**: Custom gothic-styled icons for all major file types
-- **Folder Icons**: Themed folder icons that complement the gothic aesthetic
-- **Consistent Design**: All icons follow a cohesive dark gothic design language
+- **🎯 Gothic File Icons**: Custom pixel art icons for files and folders are coming soon! These will feature gothic-styled designs that perfectly complement the dark themes.
 
 ## ✨ Features
 
-- **Rich Color Palettes**: Carefully selected colors that enhance readability while maintaining gothic atmosphere
+- **20 Unique Themes**: Each theme creates a distinctive gothic atmosphere
+- **Rich Color Palettes**: Carefully selected colors that enhance readability while maintaining gothic aesthetics
 - **Semantic Highlighting**: Intelligent syntax highlighting that makes code structure clear
 - **Complete UI Theming**: Consistent styling across all VS Code interface elements
-- **Accessibility**: High contrast variants ensure themes work for users with visual needs
-- **File Icon Integration**: Gothic-themed file and folder icons complete the experience
+- **Enhanced Readability**: High contrast variants ensure accessibility for all users
 
-## 📦 Installation
-
-1. Open the **Extensions** view in VS Code (`Ctrl+Shift+X` or `Cmd+Shift+X`)
-2. Search for "Midnight Coven"
-3. Click **Install**
-4. Select your preferred theme:
-   - Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
-   - Type "Color Theme" and select **Preferences: Color Theme**
-   - Choose any Gothic theme from the list
-5. Enable the icon theme:
-   - Open Command Palette
-   - Type "File Icon Theme" and select **Preferences: File Icon Theme**
-   - Choose **Gothic File Icons**
-
-## 🎭 Theme Showcase
-
-Each theme creates a unique atmosphere:
-
-- **Cathedral**: Majestic and reverent, like coding in an ancient cathedral
-- **Cemetery**: Mysterious and contemplative, perfect for deep focus
-- **Vampire**: Dramatic and intense, with striking red highlights
-- **Cozy**: Warm and inviting, ideal for long coding sessions
-- **Light**: Elegant gothic styling that works in bright environments
 
 ## 🔧 Recommended Settings
 
@@ -89,8 +108,8 @@ For the best experience, consider these VS Code settings:
 
 Found a bug or have suggestions? Contributions are welcome!
 
-- **Issues**: Report bugs or request features on our [GitHub repository](https://github.com/yourusername/midnight-coven-themes)
-- **Pull Requests**: Improvements to themes or icons are appreciated
+- **Issues**: Report bugs or request features on our [GitHub repository](https://github.com/diyllan/midnight-coven-themes)
+- **Pull Requests**: Improvements to themes are appreciated
 
 ## 📄 License
 

@@ -2,12 +2,6 @@
   "name": "Gothic Emerald Crypt",
   "type": "dark",
   "semanticHighlighting": true,
-  "themeSpecificSettings": {
-    "cursorTrailEffect": "crystal",
-    "focusEffects": "gem",
-    "animationIntensity": "medium",
-    "specialElements": "emerald"
-  },
   "colors": {
     "editor.background": "#0f1a15",
     "editor.foreground": "#d0e0d8",

@@ -1,9 +1,10 @@
 {
   "name": "midnight-coven-themes",
   "displayName": "Midnight Coven: Gothic Theme Collection",
-  "description": "A collection of dark, gothic-inspired themes and file icons for nocturnal coders",
+  "description": "A collection of dark, gothic-inspired themes for nocturnal coders",
   "version": "1.0.0",
   "publisher": "diyllan",
+  "icon": "images/extension_icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -25,6 +26,14 @@
     "blood moon",
     "absinthe",
     "amber",
+    "bat",
+    "death",
+    "angel",
+    "witch",
+    "moon",
+    "shadow grove",
+    "victorian",
+    "spider lily",
     "file icons",
     "icon theme"
   ],
@@ -40,19 +49,9 @@
         "path": "./themes/gothic-cathedral.json"
       },
       {
-        "label": "Gothic Cathedral High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-cathedral-high-contrast.json"
-      },
-      {
         "label": "Gothic Cemetery",
         "uiTheme": "vs-dark",
         "path": "./themes/gothic-cemetary.json"
-      },
-      {
-        "label": "Gothic Cemetery High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-cemetary-high-contrast.json"
       },
       {
         "label": "Gothic Vampire",
@@ -60,29 +59,9 @@
         "path": "./themes/gothic-vampire.json"
       },
       {
-        "label": "Gothic Vampire High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-vampire-high-contrast.json"
-      },
-      {
         "label": "Gothic Jester",
         "uiTheme": "vs-dark",
         "path": "./themes/gothic-jester.json"
-      },
-      {
-        "label": "Gothic Jester High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-jester-high-contrast.json"
-      },
-      {
-        "label": "Gothic Cozy",
-        "uiTheme": "vs-dark",
-        "path": "./themes/gothic-cozy.json"
-      },
-      {
-        "label": "Gothic Light",
-        "uiTheme": "vs",
-        "path": "./themes/gothic-light.json"
       },
       {
         "label": "Gothic Absinthe",
@@ -90,19 +69,9 @@
         "path": "./themes/gothic-absinthe.json"
       },
       {
-        "label": "Gothic Absinthe High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-absinthe-high-contrast.json"
-      },
-      {
         "label": "Gothic Raven",
         "uiTheme": "vs-dark",
         "path": "./themes/gothic-raven.json"
-      },
-      {
-        "label": "Gothic Raven High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-raven-high-contrast.json"
       },
       {
         "label": "Gothic Blood Moon",
@@ -110,19 +79,9 @@
         "path": "./themes/gothic-blood-moon.json"
       },
       {
-        "label": "Gothic Blood Moon High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-blood-moon-high-contrast.json"
-      },
-      {
         "label": "Gothic Emerald Crypt",
         "uiTheme": "vs-dark",
         "path": "./themes/gothic-emerald-crypt.json"
-      },
-      {
-        "label": "Gothic Emerald Crypt High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-emerald-crypt-high-contrast.json"
       },
       {
         "label": "Gothic Midnight Rose",
@@ -130,19 +89,9 @@
         "path": "./themes/gothic-midnight-rose.json"
       },
       {
-        "label": "Gothic Midnight Rose High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-midnight-rose-high-contrast.json"
-      },
-      {
         "label": "Gothic Amber Fog",
         "uiTheme": "vs-dark",
         "path": "./themes/gothic-amber-fog.json"
-      },
-      {
-        "label": "Gothic Amber Fog High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-amber-fog-high-contrast.json"
       },
       {
         "label": "Gothic Twilight Forest",
@@ -150,16 +99,49 @@
         "path": "./themes/gothic-twilight-forest.json"
       },
       {
-        "label": "Gothic Twilight Forest High Contrast",
-        "uiTheme": "hc-black",
-        "path": "./themes/gothic-twilight-forest-high-contrast.json"
-      }
-    ],
-    "iconThemes": [
+        "label": "Gothic Bat Wing",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-bat-wing.json"
+      },
       {
-        "id": "gothic-icons",
-        "label": "Gothic File Icons",
-        "path": "./icons/gothic-icon-theme.json"
+        "label": "Gothic Death's Embrace",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-death-embrace.json"
+      },
+      {
+        "label": "Gothic Fallen Angel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-fallen-angel.json"
+      },
+      {
+        "label": "Gothic Witch's Brew",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-witch-brew.json"
+      },
+      {
+        "label": "Gothic Moon Ritual",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-moon-ritual.json"
+      },
+      {
+        "label": "Gothic Coven's Call",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-coven-call.json"
+      },
+      {
+        "label": "Gothic Shadow Grove",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-shadow-grove.json"
+      },
+      {
+        "label": "Gothic Victorian Mourning",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-victorian-mourning.json"
+      },
+      {
+        "label": "Gothic Spider Lily",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gothic-spider-lily.json"
       }
     ]
   },

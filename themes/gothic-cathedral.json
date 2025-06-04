@@ -2,12 +2,6 @@
   "name": "Gothic Cathedral",
   "type": "dark",
   "semanticHighlighting": true,
-  "themeSpecificSettings": {
-    "cursorTrailEffect": "stainedGlass",
-    "focusEffects": "arched",
-    "animationIntensity": "medium",
-    "specialElements": "cathedral"
-  },
   "colors": {
     "editor.background": "#12100f",
     "editor.foreground": "#ffffff",
