@@ -165,12 +165,12 @@
   },
   "semanticTokenColors": {
     "enumMember": "#4fc1ff",
-    "variable": "#9cdcfe",
+    "variable": "#f5f5f0",
     "variable.readonly": "#4fc1ff",
-    "property": "#9cdcfe",
+    "property": "#f5f5f0",
     "function": "#dcdcaa",
     "method": "#dcdcaa",
-    "parameter": "#9cdcfe",
+    "parameter": "#f5f5f0",
     "class": "#4ec9b0",
     "interface": "#b8d7a3",
     "type": "#4ec9b0",
@@ -188,7 +188,7 @@
         "support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {
@@ -255,7 +255,7 @@
         "variable"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {
@@ -265,7 +265,7 @@
         "variable.other"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {
@@ -367,7 +367,7 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {
@@ -385,7 +385,7 @@
         "meta.block variable.other"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {
@@ -394,7 +394,7 @@
         "support.other.variable"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {
@@ -430,7 +430,7 @@
         "entity.name.tag.yaml"
       ],
       "settings": {
-        "foreground": "#9cdcfe"
+        "foreground": "#f5f5f0"
       }
     },
     {

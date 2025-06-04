@@ -48,13 +48,12 @@ Explore our collection of 21 atmospheric gothic themes:
 | **Gothic Victorian Mourning** | ![Gothic Victorian Mourning](images/themes/gothic-victorian-mourning.png) | Elegant purples with period sophistication |
 | **Gothic Spider Lily** | ![Gothic Spider Lily](images/themes/gothic-spider-lily.png) | Romantic reds and pinks with floral elegance |
 | **Gothic Qaddy** | ![Gothic Qaddy](images/themes/gothic-qaddy.png) | Dark+ inspired theme with off-white foreground and dark beige comments |
-| **Gothic Qaddy Mocca** | ![Gothic Qaddy Mocca](images/themes/gothic-qaddy-mocca.png) | A blend of Gothic Qaddy and Catppuccin Mocha: soft, modern, and atmospheric |
 
 </details>
 
 ## 🎨 Color Themes
 
-This extension includes 22 carefully crafted gothic themes, each with its own unique atmosphere:
+This extension includes 21 carefully crafted gothic themes, each with its own unique atmosphere:
 
 - **Gothic Cathedral** - Inspired by stained glass and gothic architecture
 - **Gothic Cemetery** - Cool, misty tones of foggy graveyards
@@ -77,7 +76,6 @@ This extension includes 22 carefully crafted gothic themes, each with its own un
 - **Gothic Victorian Mourning** - Elegant purples with period sophistication
 - **Gothic Spider Lily** - Romantic reds and pinks with floral elegance
 - **Gothic Qaddy** - Dark+ inspired theme with off-white foreground and dark beige comments
-- **Gothic Qaddy Mocca** - A blend of Gothic Qaddy and Catppuccin Mocha: soft, modern, and atmospheric
 
 ## 🚀 Planned Features
 
