@@ -28,7 +28,6 @@ All notable changes to the "Midnight Coven: Gothic Theme Collection" extension w
   - **Gothic Victorian Mourning** - Elegant purples with period sophistication
   - **Gothic Spider Lily** - Romantic reds and pinks with floral elegance
 
-- **Gothic File Icons**: Complete gothic-themed icon set for files and folders
 - **Enhanced Error/Warning Visibility**: All themes feature optimized error and warning colors that stand out clearly
 - **Semantic Highlighting**: Improved syntax highlighting across all themes for better code readability
 - **Comprehensive Documentation**: README with theme descriptions and installation instructions
